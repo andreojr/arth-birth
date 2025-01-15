@@ -3,7 +3,9 @@ import { Button } from "@/components/ui/button";
 import clsx from "clsx";
 
 export default async function ListPage() {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/guests`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/guests`, {
+        cache: "no-cache",
+    });
     if (!res.ok) {
         return <div>Erro ao carregar os convidados</div>
     }
