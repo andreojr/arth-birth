@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Bowlby_One, Playwrite_IN } from "next/font/google";
 import Image from "next/image";
-const bowlby = Bowlby_One({ weight: ["400"] })
+const bowlby = Bowlby_One({ weight: ["400"], subsets: ["latin"] })
 const playwrite = Playwrite_IN({ weight: ["400"] })
 
 export default function Home() {
