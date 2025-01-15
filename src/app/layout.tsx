@@ -27,10 +27,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <audio autoPlay loop>
-          <source src="/bita.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element
-        </audio>
         <div className="bg-[#B3DCF6] min-h-screen flex justify-center items-center overflow-hidden">
           {children}
         </div>

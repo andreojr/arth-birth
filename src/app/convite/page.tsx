@@ -26,6 +26,10 @@ export default async function InvitePage({ searchParams }: { searchParams: Promi
 
     return (
         <div className="self-end grid gap-8">
+            <audio autoPlay loop>
+                <source src="/bita.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element
+            </audio>
             <div className="p-6">
                 <div className="relative border bg-[#F2FAFF] py-6 px-12 rounded-lg text-center grid gap-4 overflow-hidden text-[#5A7FA7]">
                     <Image src="/moon.png" alt="Moon" width={180} height={100} className="absolute -left-20 -top-20" />
