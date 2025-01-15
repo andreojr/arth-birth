@@ -30,7 +30,7 @@ export default function Home() {
       </div>
 
       <div>
-        <Image src="/IMG_1803.PNG" alt="Arthur" width={289.4*1.75} height={409.6} />
+        <Image src="/arthur.png" alt="Arthur" width={289.4*1.75} height={409.6} />
       </div>
     </div>
   );

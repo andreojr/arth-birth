@@ -35,7 +35,7 @@ export default async function InvitePage({ searchParams }: { searchParams: Promi
                     <Image src="/moon.png" alt="Moon" width={180} height={100} className="absolute -left-20 -top-20" />
                     <Image src="/rocket.png" alt="Rocket" width={160} height={100} className="absolute -right-10 -top-5" />
                     <Image src="/ufo.png" alt="UFO" width={150} height={50} className="absolute -right-8 -bottom-10" />
-                    <Image src="/arthur.png" alt="Arthur" width={150} height={50} className="absolute -left-7 -bottom-12" />
+                    <Image src="/arthur-croped.png" alt="Arthur" width={150} height={50} className="absolute left-0 bottom-0" />
                     <div>
                         <p className="text-[#F4B955] font-bold">5, 4, 3, 2</p>
                         <p className={`text-3xl ${bowlby.className}`}>UM!</p>
