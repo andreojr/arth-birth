@@ -3,10 +3,10 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { phone: string } }
+  { params }: { params: Promise<{ phone: string }> }
 ): Promise<NextResponse> {
   try {
-    const { phone } = params;
+    const { phone } = await params;
 
     if (!phone) {
       return NextResponse.json(

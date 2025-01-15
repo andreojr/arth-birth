@@ -9,7 +9,7 @@ export async function GET(): Promise<NextResponse> {
       id: doc.id,
       ...doc.data(),
     }));
-
+    
     return NextResponse.json(guests, { status: 200 });
   } catch (error) {
     console.error("Erro ao buscar todos os usuários:", error);

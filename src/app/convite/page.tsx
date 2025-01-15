@@ -7,9 +7,9 @@ import { Bowlby_One, Playwrite_IN } from "next/font/google";
 const bowlby = Bowlby_One({ weight: ["400"], subsets: ["latin"] })
 const playwrite = Playwrite_IN({ weight: ["400"] })
 
-export default async function InvitePage({ searchParams: { numero } }: { searchParams: { numero: string } }) {
-
-    const req = await fetch(`http://localhost:3000/api/guests/${numero}`);
+export default async function InvitePage({ searchParams }: { searchParams: Promise<{ numero: string }> }) {
+    const { numero } = await searchParams;
+    const req = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/guests/${numero}`);
     if (!req.ok || numero === "") {
         return (
             <div className="text-center grid gap-4">

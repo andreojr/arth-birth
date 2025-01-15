@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import clsx from "clsx";
 
 export default async function ListPage() {
-    const req = await fetch('http://localhost:3000/api/guests');
+    const req = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/guests`);
     const guests: Guest[] = await req.json();
 
     return (
